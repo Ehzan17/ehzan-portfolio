@@ -1,0 +1,2 @@
+import Link from "next/link"; import {Clock} from "./Clock";
+export function Nav(){return <header className="fixed top-0 z-30 flex w-full items-center justify-between px-4 py-4 mix-blend-multiply md:px-8"><Link href="/" className="mono text-sm font-bold">EHZAN®</Link><div className="hidden text-[10px] md:block mono"><Clock/></div><nav className="flex gap-4 text-xs mono"><Link href="/work">Work</Link><Link href="/about">About</Link><Link href="/contact">Contact</Link></nav></header>}

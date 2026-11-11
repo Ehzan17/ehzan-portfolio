@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";export default async function Settings(){await requireAdmin();return <main className="p-8"><h1 className="text-4xl font-bold">Settings</h1><p className="mt-5">Profile, availability, social links and SEO settings.</p></main>}

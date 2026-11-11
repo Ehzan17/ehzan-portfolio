@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";export default async function Messages(){await requireAdmin();return <main className="p-8"><h1 className="text-4xl font-bold">Messages</h1><p className="mt-5">Incoming contact submissions appear here once PostgreSQL is configured.</p></main>}

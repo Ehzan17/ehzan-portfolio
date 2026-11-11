@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";export default async function ExperienceAdmin(){await requireAdmin();return <main className="p-8"><h1 className="text-4xl font-bold">Experience</h1><p className="mt-5">Add verified education and experience entries.</p></main>}

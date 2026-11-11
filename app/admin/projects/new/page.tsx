@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";import {ProjectForm} from "@/components/ProjectForm";export default async function NewProject(){await requireAdmin();return <main className="min-h-screen bg-neutral-100 p-8"><p className="mono text-xs">CMS / New project</p><h1 className="mt-5 text-4xl font-bold">Create project</h1><ProjectForm/></main>}

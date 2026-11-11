@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";export default async function Skills(){await requireAdmin();return <main className="p-8"><h1 className="text-4xl font-bold">Skills</h1><p className="mt-5">Manage technology categories and display order here after database setup.</p></main>}

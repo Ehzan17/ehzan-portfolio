@@ -1,0 +1,1 @@
+import {requireAdmin} from "@/lib/auth";export default async function Media(){await requireAdmin();return <main className="p-8"><h1 className="text-4xl font-bold">Media library</h1><p className="mt-5">Persistent uploads are mounted at /app/public/uploads in Docker.</p></main>}
