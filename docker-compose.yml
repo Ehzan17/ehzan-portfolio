@@ -2,7 +2,10 @@ services:
   db:
     image: postgres:16-alpine
     restart: unless-stopped
-    environment: { POSTGRES_USER: ehzan, POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set in .env}, POSTGRES_DB: ehzan }
+    environment:
+      POSTGRES_USER: ehzan
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set in .env}
+      POSTGRES_DB: ehzan
     volumes: [postgres_data:/var/lib/postgresql/data]
     healthcheck: { test: ["CMD-SHELL","pg_isready -U ehzan"], interval: 10s, timeout: 5s, retries: 5 }
   app:
